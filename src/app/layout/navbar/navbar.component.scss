@@ -1,0 +1,21 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; // remove the gap so it doesn't close
+}
+
+//----------------------DIFF METHOD TO TREAT DROPDOWN ON HOVER
+
+// .hover_drop_down.input-group-btn ul.dropdown-menu{margin-top: 0px;}/*To avoid unwanted close*/
+// .hover_drop_down.btn-group ul.dropdown-menu{margin-top:2px;}/*To avoid unwanted close*/
+// .hover_drop_down:hover ul.dropdown-menu{
+//    display: block;
+// }
+
+// <div class="btn-group hover_drop_down">
+//   <button type="button" class="btn btn-default" data-toggle="dropdown"></button>
+//   <ul class="dropdown-menu" role="menu">
+//     ...
+//   </ul>
+// </div>
+
+//------------------------------------------------------------------------------------------------
