@@ -1,0 +1,18 @@
+@import "../../../styles/base/typography";
+
+form {
+  width: 70%;
+  margin: 0 auto;
+  font-family: inherit;
+}
+
+.form-floating {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+option,
+select {
+  font-size: 1.8rem;
+}

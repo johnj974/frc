@@ -17,6 +17,10 @@ i {
   color: $color-blue;
 }
 
+i:hover {
+  color: $color-neonblue;
+}
+
 p {
   margin: 0 auto;
   text-align: center;
