@@ -15,4 +15,14 @@ textarea,
 option,
 select {
   font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 690px) {
+  form {
+    width: 90%;
+  }
+  .btn-custom-primary {
+    width: 100%;
+  }
 }

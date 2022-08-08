@@ -1,0 +1,14 @@
+.btn-custom-primary {
+  background-color: $color-lightgreen;
+  border: 2px solid $color-blue;
+  font-size: 1.8rem;
+  color: $color-white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-lightgreen;
+    border-color: $color-neonblue;
+    color: $color-neonblue;
+  }
+}

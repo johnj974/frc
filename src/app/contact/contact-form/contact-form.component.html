@@ -2,58 +2,48 @@
   <div class="row">
     <div class="col">
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div class="form-floating">
-          <input
-            class="form-control"
-            type="text"
-            name="contactName"
-            id="contactName"
-            formControlName="contactName"
-            placeholder="Name"
-          />
-          <label for="contactName">Name</label>
-        </div>
+        <input
+          class="form-control"
+          type="text"
+          name="contactName"
+          id="contactName"
+          formControlName="contactName"
+          placeholder="Name"
+        />
 
-        <div class="form-floating">
-          <input
-            class="form-control"
-            type="text"
-            name="email"
-            id="email"
-            formControlName="email"
-            placeholder="Email"
-          />
-          <label for="email">Email</label>
-        </div>
+        <input
+          class="form-control"
+          type="text"
+          name="email"
+          id="email"
+          formControlName="email"
+          placeholder="Email"
+        />
 
-        <div class="form-floating">
-          <select
-            class="form-select"
-            name="topic"
-            id="topic"
-            formControlName="topic"
-            placeholder="topic"
-          >
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <label for="topic">Topic</label>
-        </div>
+        <select
+          class="form-select"
+          name="topic"
+          id="topic"
+          formControlName="topic"
+        >
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
 
-        <div class="form-floating">
-          <textarea
-            class="form-control"
-            name="message"
-            id="message"
-            formControlName="message"
-            rows="10"
-            placeholder="message"
-          ></textarea>
-          <label for="message">Message</label>
-        </div>
-        <button class="btn btn-primary">Submit</button>
+        <textarea
+          class="form-control"
+          name="message"
+          id="message"
+          formControlName="message"
+          rows="6"
+          placeholder="Message"
+        ></textarea>
+
+        <button type="button" class="btn btn-custom-primary btn-lg">
+          Submit
+        </button>
       </form>
     </div>
   </div>
