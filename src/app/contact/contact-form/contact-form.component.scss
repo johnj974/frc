@@ -1,4 +1,5 @@
 @import "../../../styles/base/typography";
+@import "../../../styles/helpers/variables";
 
 form {
   width: 70%;
@@ -16,6 +17,8 @@ option,
 select {
   font-size: 1.8rem;
   margin-bottom: 2rem;
+  box-shadow: 0 0 3px $color-blue;
+  margin: 10px;
 }
 
 @media screen and (max-width: 690px) {

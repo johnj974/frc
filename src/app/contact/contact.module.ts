@@ -6,9 +6,10 @@ import { ContactLayoutComponent } from './contact-layout/contact-layout.componen
 import { SharedModule } from '../shared/shared.module';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContactSocialComponent } from './contact-social/contact-social.component';
 
 @NgModule({
-  declarations: [ContactLayoutComponent, ContactFormComponent],
+  declarations: [ContactLayoutComponent, ContactFormComponent, ContactSocialComponent],
   imports: [
     CommonModule,
     ContactRoutingModule,

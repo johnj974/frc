@@ -1,14 +1,25 @@
 .btn-custom-primary {
-  background-color: $color-lightgreen;
-  border: 2px solid $color-blue;
+  background-color: $color-blue;
+  border: none;
   font-size: 1.8rem;
   color: $color-white;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
+  border-radius: 23px;
   cursor: pointer;
 
   &:hover {
     background-color: $color-lightgreen;
-    border-color: $color-neonblue;
-    color: $color-neonblue;
+    transition: background-color 0.5s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .btn-custom-primary {
+    width: 50%;
   }
 }

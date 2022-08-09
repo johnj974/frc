@@ -1,0 +1,16 @@
+@import "../../../styles/helpers/variables";
+
+i {
+  color: $color-blue;
+  font-size: 100px;
+  margin: 2rem;
+
+  &:hover {
+    color: $color-lightgreen;
+    transition: color 0.5s ease-in-out;
+  }
+}
+
+.col {
+  text-align: center;
+}
