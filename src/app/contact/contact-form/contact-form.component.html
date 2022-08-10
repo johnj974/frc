@@ -1,47 +1,91 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <input
-          class="form-control"
-          type="text"
-          name="contactName"
-          id="contactName"
-          formControlName="contactName"
-          placeholder="Name"
-        />
+      <form
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+        autocomplete="off"
+      >
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="text"
+            name="contactName"
+            id="contactName"
+            formControlName="contactName"
+            placeholder="Name"
+          />
+          <span
+            class="form-text"
+            *ngIf="
+              !contactForm.get('contactName').valid &&
+              contactForm.get('contactName').touched
+            "
+            >Please enter a name</span
+          >
+        </div>
 
-        <input
-          class="form-control"
-          type="text"
-          name="email"
-          id="email"
-          formControlName="email"
-          placeholder="Email"
-        />
+        <div class="mb-3">
+          <input
+            class="form-control"
+            type="text"
+            name="email"
+            id="email"
+            formControlName="email"
+            placeholder="Email"
+          />
+          <span
+            class="form-text"
+            *ngIf="
+              !contactForm.get('email').valid &&
+              contactForm.get('email').touched
+            "
+            >Please enter a valid email</span
+          >
+        </div>
 
-        <select
-          class="form-select"
-          name="topic"
-          id="topic"
-          formControlName="topic"
+        <div class="mb-3">
+          <select
+            class="form-select"
+            name="topic"
+            id="topic"
+            formControlName="topic"
+          >
+            <option [value]="class.name" *ngFor="let class of availableClasses">
+              {{ class.name }}
+            </option>
+          </select>
+          <span
+            class="form-text"
+            *ngIf="
+              !contactForm.get('topic').valid &&
+              contactForm.get('topic').touched
+            "
+            >Please select an option</span
+          >
+        </div>
+
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            formControlName="message"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <span
+          class="form-text"
+          *ngIf="
+            !contactForm.get('message').valid &&
+            contactForm.get('message').touched
+          "
+          >Please enter a message less than 100 characters</span
         >
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-
-        <textarea
-          class="form-control"
-          name="message"
-          id="message"
-          formControlName="message"
-          rows="6"
-          placeholder="Message"
-        ></textarea>
-
-        <button type="button" class="btn-custom-primary btn-lg">Submit</button>
+        <div class="button-container">
+          <button class="btn-custom-primary btn-lg">Submit</button>
+        </div>
       </form>
     </div>
   </div>
