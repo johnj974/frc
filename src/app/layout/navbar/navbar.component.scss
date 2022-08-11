@@ -1,6 +1,28 @@
+@import "../../../styles/helpers/variables";
+
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0; // remove the gap so it doesn't close
+}
+
+.navbar {
+  background-color: $color-lightgreen;
+  padding: 3rem;
+
+  .nav-link {
+    color: $color-white;
+    font-weight: 300;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .nav-link {
+    margin-left: 1rem;
+  }
 }
 
 //----------------------DIFF METHOD TO TREAT DROPDOWN ON HOVER
