@@ -1,0 +1,17 @@
+@import "../../../styles/styles.scss";
+
+h3 {
+  font-size: 4rem;
+  color: $color-lightgreen;
+  text-align: center;
+  padding: 2rem;
+}
+
+.col-md-6 {
+  padding: 3rem;
+}
+
+.frc-box-one {
+  background-color: $color-lightgreen;
+  color: $color-white;
+}
