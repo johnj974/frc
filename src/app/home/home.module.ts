@@ -7,7 +7,7 @@ import { HomeResourceComponent } from './home-resource/home-resource.component';
 import { HomeStatementComponent } from './home-statement/home-statement.component';
 import { HomeChildComponent } from './home-child/home-child.component';
 import { HomeSeniorComponent } from './home-senior/home-senior.component';
-import { HomeInfoComponent } from './home-info/home-info.component';
+
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
@@ -17,7 +17,6 @@ import { SharedModule } from '../shared/shared.module';
     HomeStatementComponent,
     HomeChildComponent,
     HomeSeniorComponent,
-    HomeInfoComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule],
 })

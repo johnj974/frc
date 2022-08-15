@@ -16,7 +16,7 @@ export class ResourcesService {
     new ResourceModel(
       'bi bi-box',
       'Classes',
-      'Autplaceat alias excepturi quia harum suscipit? Voluptatem magni sinttempora, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ',
+      'Autplaceat alias excepturi quia harum suscipit? Voluptatem magni sinttempora, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, medi ',
       'classes'
     ),
     new ResourceModel(
