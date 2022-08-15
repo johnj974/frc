@@ -10,17 +10,20 @@ export class ResourcesService {
     new ResourceModel(
       'bi bi-calendar-event',
       'Rental Facilities',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, autplaceat alias excepturi quia harum suscipit? Voluptatem magni sinttempora.'
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, autplaceat alias excepturi quia harum suscipit? Voluptatem magni sinttempora.',
+      'facilities'
     ),
     new ResourceModel(
       'bi bi-box',
       'Classes',
-      'Autplaceat alias excepturi quia harum suscipit? Voluptatem magni sinttempora, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, '
+      'Autplaceat alias excepturi quia harum suscipit? Voluptatem magni sinttempora, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ',
+      'classes'
     ),
     new ResourceModel(
       'bi bi-clipboard',
       'Services',
-      'Sed, autplaceat alias excepturi quia harum suscipit?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni sinttempora.'
+      'Sed, autplaceat alias excepturi quia harum suscipit?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni sinttempora.',
+      'services'
     ),
   ];
 

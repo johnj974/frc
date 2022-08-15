@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ResourcesService } from 'src/app/services/resources.service';
 
 @Component({
@@ -9,7 +10,15 @@ import { ResourcesService } from 'src/app/services/resources.service';
 export class HomeResourceComponent implements OnInit {
   //.
   resourcesList = [];
-  constructor(private resourcesService: ResourcesService) {}
+  constructor(
+    private resourcesService: ResourcesService,
+    private router: Router
+  ) {}
+
+  toPage(page: string) {
+    console.log(page);
+    this.router.navigate([`/${page}`]);
+  }
 
   ngOnInit(): void {
     this.resourcesList = this.resourcesService.resourceArray;
