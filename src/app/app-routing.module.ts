@@ -7,14 +7,19 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: 'classes',
-    loadChildren: () =>
-      import('./classes/classes.module').then((m) => m.ClassesModule),
-  },
-  {
     path: 'about',
     loadChildren: () =>
       import('./about/about.module').then((m) => m.AboutModule),
+  },
+  {
+    path: 'facilities',
+    loadChildren: () =>
+      import('./facilities/facilities.module').then((m) => m.FacilitiesModule),
+  },
+  {
+    path: 'classes',
+    loadChildren: () =>
+      import('./classes/classes.module').then((m) => m.ClassesModule),
   },
   {
     path: 'services',
@@ -27,9 +32,14 @@ const routes: Routes = [
       import('./contact/contact.module').then((m) => m.ContactModule),
   },
   {
-    path: 'facilities',
+    path: 'childcare',
     loadChildren: () =>
-      import('./facilities/facilities.module').then((m) => m.FacilitiesModule),
+      import('./childcare/childcare.module').then((m) => m.ChildcareModule),
+  },
+  {
+    path: 'seniors',
+    loadChildren: () =>
+      import('./seniors/seniors.module').then((m) => m.SeniorsModule),
   },
 ];
 

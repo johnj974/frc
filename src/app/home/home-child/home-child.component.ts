@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-child',
@@ -9,10 +10,10 @@ export class HomeChildComponent implements OnInit {
   //.
 
   toChildcare() {
-    console.log('this will go to childcare page');
+    this.router.navigate(['/childcare']);
   }
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 }
