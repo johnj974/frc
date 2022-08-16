@@ -1,5 +1,5 @@
 .btn-custom-primary {
-  background-color: $color-blue;
+  background-color: $color-lightgreen;
   border: none;
   font-size: 1.8rem;
   color: $color-white;
@@ -8,7 +8,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $color-lightgreen;
+    background-color: $color-blue;
     transition: background-color 0.5s ease-in-out;
   }
 }
