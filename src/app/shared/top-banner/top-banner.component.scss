@@ -1,0 +1,19 @@
+@import "../../../styles/helpers/variables";
+
+.image-style {
+  max-height: 40vh;
+  overflow: hidden;
+  width: 100%;
+  background-position: bottom;
+}
+
+h1 {
+  color: $color-blue;
+  letter-spacing: 1rem;
+}
+
+p {
+  color: $color-white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
