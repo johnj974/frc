@@ -15,6 +15,7 @@ import { ContactSocialComponent } from './contact-social/contact-social.componen
     ContactRoutingModule,
     SharedModule,
     ReactiveFormsModule,
+    SharedModule
   ],
 })
 export class ContactModule {}
