@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col centre-box">
+      <h2>
+        <ng-content select="h2" class="serve-banner-h2"></ng-content>
+      </h2>
+      <p>
+        <ng-content select="p"></ng-content>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h4>
+        <ng-content select="h4"></ng-content>
+      </h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p><ng-content select="[p1]"></ng-content></p>
+    </div>
+    <div class="col-md-6">
+      <p><ng-content select="[p2]"></ng-content></p>
+    </div>
+  </div>
+</div>
