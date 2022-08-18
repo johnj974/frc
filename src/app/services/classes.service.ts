@@ -28,5 +28,9 @@ export class ClassesService {
       'To save lives',
     ]),
   ];
+
+  retrieveClassArray() {
+    return this.classesAvailableArray.slice();
+  }
   constructor() {}
 }

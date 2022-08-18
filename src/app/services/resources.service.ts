@@ -27,5 +27,9 @@ export class ResourcesService {
     ),
   ];
 
+  retrieveResourceArray() {
+    return this.resourceArray.slice();
+  }
+
   constructor() {}
 }

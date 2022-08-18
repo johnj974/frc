@@ -21,6 +21,6 @@ export class HomeResourceComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.resourcesList = this.resourcesService.resourceArray;
+    this.resourcesList = this.resourcesService.retrieveResourceArray();
   }
 }

@@ -51,5 +51,9 @@ export class SeniorsService {
     ),
   ];
 
+  retrieveSeniorArray() {
+    return this.seniorServicesArray.slice();
+  }
+
   constructor() {}
 }

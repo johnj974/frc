@@ -15,6 +15,6 @@ export class SeniorsBenefitsComponent implements OnInit {
   constructor(private seniorsService: SeniorsService) {}
 
   ngOnInit(): void {
-    this.seniorArray = this.seniorsService.seniorServicesArray;
+    this.seniorArray = this.seniorsService.retrieveSeniorArray();
   }
 }

@@ -13,6 +13,6 @@ export class NavbarComponent implements OnInit {
   constructor(private classeService: ClassesService) {}
 
   ngOnInit(): void {
-    this.availableClasses = this.classeService.classesAvailableArray;
+    this.availableClasses = this.classeService.retrieveClassArray();
   }
 }
