@@ -1,0 +1,53 @@
+@import "../helpers/variables";
+
+.container {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.col-md-4,
+.col-md-8 {
+  padding: 0;
+}
+
+.color-box {
+  background-color: $color-blue;
+
+  .text-box {
+    color: $color-white;
+    padding: 3rem;
+
+    h2 {
+      font-size: 5rem;
+      font-weight: 900;
+      margin-bottom: 3rem;
+    }
+
+    a {
+      font-size: 1.6rem;
+
+      cursor: pointer;
+    }
+  }
+}
+
+img {
+  max-height: 40rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.right-picture {
+  border-left: 2.5rem solid transparent;
+}
+
+.left-picture {
+  border-right: 2.5rem solid transparent;
+}
+
+@media only screen and (max-width: 990px) {
+  .left-picture,
+  .right-picture {
+    border: none;
+  }
+}

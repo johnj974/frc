@@ -1,0 +1,24 @@
+<!-- public name: string,
+    public description: string,
+    public day: string,
+    public time: string,
+    public goal: string[] -->
+
+<div class="container" *ngFor="let class of availableClasses; let id = index">
+  <div class="row" [class]="{ 'flex-row-reverse': id % 2 === 0 }">
+    <div class="col-md-8">
+      <div [class]="id % 2 === 0 ? 'right-picture' : 'left-picture'">
+        <img src="{{ class.image }}" alt="{{ class.name }}" class="img-fluid" />
+      </div>
+    </div>
+    <div class="col-md-4 color-box">
+      <div class="text-box">
+        <h2>{{ class.name }}</h2>
+        <p>{{ class.description }}</p>
+        <a (click)="toClassPage(id, class.name)"
+          >Read More <i class="bi bi-caret-right"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

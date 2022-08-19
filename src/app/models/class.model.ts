@@ -4,6 +4,7 @@ export class ClassModel {
     public description: string,
     public day: string,
     public time: string,
-    public goal: string[]
+    public goal: string[],
+    public image: string
   ) {}
 }
