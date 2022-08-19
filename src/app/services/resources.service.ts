@@ -31,5 +31,9 @@ export class ResourcesService {
     return this.resourceArray.slice();
   }
 
+  retrieveSingleResource(id: number) {
+    return this.resourceArray[id];
+  }
+
   constructor() {}
 }

@@ -32,6 +32,10 @@ export class OffersService {
     return this.offersArray.slice();
   }
 
+  retrieveSingleOffer(id: number) {
+    return this.offersArray[id];
+  }
+
   constructor() {}
 }
 

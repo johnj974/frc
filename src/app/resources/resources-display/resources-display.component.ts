@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { OffersModel } from 'src/app/models/offers.model';
 import { OffersService } from 'src/app/services/offers.service';
 
@@ -11,11 +12,12 @@ export class ResourcesDisplayComponent implements OnInit {
   //.
   servicesProvidedArray: OffersModel[];
 
-  toPage(link: string) {
-    console.log(link);
+  toServicePage(id: number, link: string) {
+    let serviceName = link.replace(/ /g, '');
+    this.router.navigate(['/services', id, serviceName]);
   }
 
-  constructor(private offersService: OffersService) {}
+  constructor(private offersService: OffersService, private router: Router) {}
 
   ngOnInit(): void {
     this.servicesProvidedArray = this.offersService.retrieveOffersArray();
