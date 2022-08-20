@@ -10,39 +10,63 @@ export class ClassesService {
   classesAvailableArray: ClassModel[] = [
     new ClassModel(
       'Art',
-      'An art class',
+      'Do you like creating a mess?, Make a creative mess with these art classes',
       'Tuesday',
       '9.00am - 11.00am',
       [
-        'To encourage art',
-        'To draw stuff',
+        'Relaxation.',
+        'Igniting Your Creativity',
         'Social interaction',
-        'To colour stuff',
+        'Boosting Your Memory',
       ],
       './assets/images/dirty-brushes.jpg'
     ),
     new ClassModel(
       'Photography',
-      'Take photos',
+      'Learn how to take care of your equipment and how best to use it to capture amazing photos.',
       'Wednesday',
       '7.00pm - 9.00pm',
       ['To take pictures', 'Social', 'Artistic', 'To Learn about cameras'],
-      './assets/images/paint-brushes.jpg'
+      './assets/images/camera.jpg'
     ),
     new ClassModel(
       'First Aid',
-      'Do first aid',
+      'Learn how to save a life, What could be more rewarding?',
       'Friday',
       '7.00pm - 9.00pm',
       ['To practice first aid', 'Social', 'To assess danger', 'To save lives'],
-      './assets/images/paint-brushes.jpg'
+      './assets/images/first-aid.jpg'
+    ),
+    new ClassModel(
+      'Computers ',
+      'Do you struggle with simple computer tasks?, well struggle no more!!',
+      'Friday',
+      '7.00pm - 9.00pm',
+      ['To practice first aid', 'Social', 'To assess danger', 'To save lives'],
+      './assets/images/computer.jpg'
+    ),
+    new ClassModel(
+      'Cookery',
+      'From the simple to the sublime, Learn to cook it all with these classes',
+      'Friday',
+      '7.00pm - 9.00pm',
+      ['To practice first aid', 'Social', 'To assess danger', 'To save lives'],
+      './assets/images/cookery.jpg'
     ),
   ];
 
   retrieveClassArray() {
     return this.classesAvailableArray.slice();
   }
+
+  retrieveSingleClass(id: number) {
+    return this.classesAvailableArray[id];
+  }
   constructor() {}
 }
 
 // Photo dirty-brushes by Yannis Papanastasopoulos @ unsplash
+// Photo camera by NordWood Themes @ unsplash
+// Photo first-aid by Mat Napo @ unsplash
+// Photo cookery by Louis Hansel @ unsplash
+// Photo computer by Clément Hélardot @ unsplash

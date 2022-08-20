@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { OffersModel } from 'src/app/models/offers.model';
@@ -9,7 +9,7 @@ import { OffersService } from 'src/app/services/offers.service';
   templateUrl: './resources-single.component.html',
   styleUrls: ['./resources-single.component.scss'],
 })
-export class ResourcesSingleComponent implements OnInit {
+export class ResourcesSingleComponent implements OnInit, OnDestroy {
   //.
 
   singleService: OffersModel;
@@ -28,5 +28,9 @@ export class ResourcesSingleComponent implements OnInit {
         this.serviceId
       );
     });
+  }
+
+  ngOnDestroy(): void {
+    this.serviceSubscription.unsubscribe();
   }
 }

@@ -15,7 +15,8 @@ export class ClassesDisplayComponent implements OnInit {
   constructor(private classesService: ClassesService, private router: Router) {}
 
   toClassPage(id: number, name: string) {
-    console.log(id, name);
+    let className = name.replace(/ /g, '');
+    this.router.navigate(['/classes', id, className]);
   }
 
   ngOnInit(): void {
