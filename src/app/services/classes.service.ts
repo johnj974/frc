@@ -19,7 +19,13 @@ export class ClassesService {
         'Social interaction',
         'Boosting Your Memory',
       ],
-      './assets/images/dirty-brushes.jpg'
+      './assets/images/dirty-brushes.jpg',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsam non
+      porro facere dolorem ea ut laborum, quisquam incidunt voluptatum adipisci,
+      modi ducimus amet delectus quae id consectetur impedit dignissimos
+      perspiciatis architecto. Alias placeat obcaecati deserunt molestias
+      repudiandae ad cumque maxime, eaque illum facilis rem repellendus suscipit
+      nisi? Ut, non?`
     ),
     new ClassModel(
       'Photography',
@@ -27,7 +33,13 @@ export class ClassesService {
       'Wednesday',
       '7.00pm - 9.00pm',
       ['To take pictures', 'Social', 'Artistic', 'To Learn about cameras'],
-      './assets/images/camera.jpg'
+      './assets/images/camera.jpg',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsam non
+      porro facere dolorem ea ut laborum, quisquam incidunt voluptatum adipisci,
+      modi ducimus amet delectus quae id consectetur impedit dignissimos
+      perspiciatis architecto. Alias placeat obcaecati deserunt molestias
+      repudiandae ad cumque maxime, eaque illum facilis rem repellendus suscipit
+      nisi? Ut, non?`
     ),
     new ClassModel(
       'First Aid',
@@ -35,7 +47,13 @@ export class ClassesService {
       'Friday',
       '7.00pm - 9.00pm',
       ['To practice first aid', 'Social', 'To assess danger', 'To save lives'],
-      './assets/images/first-aid.jpg'
+      './assets/images/first-aid.jpg',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsam non
+      porro facere dolorem ea ut laborum, quisquam incidunt voluptatum adipisci,
+      modi ducimus amet delectus quae id consectetur impedit dignissimos
+      perspiciatis architecto. Alias placeat obcaecati deserunt molestias
+      repudiandae ad cumque maxime, eaque illum facilis rem repellendus suscipit
+      nisi? Ut, non?`
     ),
     new ClassModel(
       'Computers ',
@@ -43,7 +61,13 @@ export class ClassesService {
       'Friday',
       '7.00pm - 9.00pm',
       ['To practice first aid', 'Social', 'To assess danger', 'To save lives'],
-      './assets/images/computer.jpg'
+      './assets/images/computer.jpg',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsam non
+      porro facere dolorem ea ut laborum, quisquam incidunt voluptatum adipisci,
+      modi ducimus amet delectus quae id consectetur impedit dignissimos
+      perspiciatis architecto. Alias placeat obcaecati deserunt molestias
+      repudiandae ad cumque maxime, eaque illum facilis rem repellendus suscipit
+      nisi? Ut, non?`
     ),
     new ClassModel(
       'Cookery',
@@ -51,7 +75,13 @@ export class ClassesService {
       'Friday',
       '7.00pm - 9.00pm',
       ['To practice first aid', 'Social', 'To assess danger', 'To save lives'],
-      './assets/images/cookery.jpg'
+      './assets/images/cookery.jpg',
+      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsam non
+      porro facere dolorem ea ut laborum, quisquam incidunt voluptatum adipisci,
+      modi ducimus amet delectus quae id consectetur impedit dignissimos
+      perspiciatis architecto. Alias placeat obcaecati deserunt molestias
+      repudiandae ad cumque maxime, eaque illum facilis rem repellendus suscipit
+      nisi? Ut, non?`
     ),
   ];
 

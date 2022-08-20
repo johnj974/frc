@@ -15,6 +15,7 @@ export class ClassesSingleComponent implements OnInit, OnDestroy {
   chosenClass: ClassModel;
   classId: number;
   classSubscription: Subscription;
+  classGoals:string[];
 
   constructor(
     private route: ActivatedRoute,
@@ -25,6 +26,7 @@ export class ClassesSingleComponent implements OnInit, OnDestroy {
     this.classSubscription = this.route.params.subscribe((params: Params) => {
       this.classId = params.id;
       this.chosenClass = this.classesService.retrieveSingleClass(this.classId);
+      this.classGoals = this.chosenClass.goal;
     });
   }
 
