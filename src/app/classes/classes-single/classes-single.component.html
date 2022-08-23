@@ -35,14 +35,14 @@
         (click)="toPreviousClass()"
         [disabled]="disablePrevButton"
       >
-        prev
+        <i class="bi bi-caret-left"></i>Prev
       </button>
       <button
         class="btn-custom-primary"
         (click)="toNextClass()"
         [disabled]="disableNextButton"
       >
-        next
+        Next<i class="bi bi-caret-right"></i>
       </button>
     </div>
   </div>
@@ -53,9 +53,9 @@
     For more information please contact the {{ chosenClass.name }} Manager on
     Tel: 087 1234567 or Office Manager on Tel: 066 7199999
   </p>
-  <h4>Lots of ways to get in contact with the FRC.</h4>
+  <h4>Classes for everyone at the FRC.</h4>
   <h2>
-    {{ chosenClass.name }} class hours are {{ chosenClass.time }} but feel free
-    to contact us at any time using our contact form.
+    {{ chosenClass.name }} class hours are {{ chosenClass.time }}, Contact the
+    art manager to book your space.
   </h2>
 </app-info-banner>
