@@ -31,18 +31,16 @@
         management committee consists of the following positions and personnel:
       </p>
       <h5>Management Committee:</h5>
-      <ul>
-        <li>Tom Smith</li>
-        <li>Tom Smith</li>
-        <li>Tom Smith</li>
-        <li>Tom Smith</li>
-        <li>Tom Smith</li>
+      <ul *ngFor="let person of managementPersonel">
+        <li>
+          <span>{{ person.position }} - </span>{{ person.name }}
+        </li>
       </ul>
       <h5>Centre Management Team:</h5>
-      <ul>
-        <li>Mary Browne</li>
-        <li>Mary Browne</li>
-        <li>Mary Browne</li>
+      <ul *ngFor="let person of centrePersonel">
+        <li>
+          <span>{{ person.position }} - </span>{{ person.name }}
+        </li>
       </ul>
     </div>
   </div>
