@@ -1,3 +1,22 @@
-<p>about-team works!</p>
-<!-- Photo profile by Vince Veras @ unsplash
-   -->
+<div class="container">
+  <div class="row">
+    <div class="col text-box">
+      <h2>Meet our team</h2>
+      <h2><i class="bi bi-dash-lg"></i></h2>
+      <p>Our Company in faces</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3" *ngFor="let person of managementTeam">
+      <img
+        src="../../../assets/images/{{ person.image }}.jpg"
+        alt="a profile picture of a person"
+        class="img-fluid"
+      />
+      <div class="text-box">
+        <h4>{{ person.name }}</h4>
+        <h5>{{ person.position }}</h5>
+      </div>
+    </div>
+  </div>
+</div>

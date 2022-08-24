@@ -8,16 +8,21 @@ export class PersonelService {
   //.
 
   managementArray: PersonelModel[] = [
-    new PersonelModel('Tom Smith', 'Chairperson', 'profile'),
-    new PersonelModel('Tom Smith', 'Secretary', 'profile'),
-    new PersonelModel('Tom Smith', 'Treasurer', 'profile'),
-    new PersonelModel('Tom Smith', 'Director', 'profile'),
+    new PersonelModel('Nina Samone', 'Chairperson', 'profile'),
+    new PersonelModel('Gwen Steffani', 'Secretary', 'profile2'),
+    new PersonelModel('Andrea Corr', 'Treasurer', 'profile3'),
+    new PersonelModel('Janice Jones', 'Director', 'profile4'),
   ];
 
+  // Photo profile by Vince Veras @ unsplash
+  // Photo profile2 by Christopher Campbell @ unsplash
+  // Photo profile3 by May Gauthier @ unsplash
+  // Photo profile4 by Edward Cisneros @ unsplash
+
   centrePersonelArray: PersonelModel[] = [
-    new PersonelModel('Mary Browne', 'Centre Manager', 'profile'),
-    new PersonelModel('Mary Browne', 'Office Manager', 'profile'),
-    new PersonelModel('Mary Browne', 'Childcare Manager', 'profile'),
+    new PersonelModel('Tom Smith', 'Centre Manager', 'profile1'),
+    new PersonelModel('Mary Browne', 'Office Manager', 'profile2'),
+    new PersonelModel('Louise McSharry', 'Childcare Manager', 'profile3'),
   ];
 
   retrieveManagementArray() {

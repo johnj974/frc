@@ -1,0 +1,23 @@
+@import "../../../styles/helpers/variables";
+
+h2 {
+  font-size: 4rem;
+  // border-bottom: 2px solid $color-blue;
+}
+
+i {
+  color: $color-blue;
+}
+
+p {
+  color: $color-grey;
+  margin: 2rem auto;
+}
+
+.text-box {
+  text-align: center;
+}
+
+h5 {
+  color: $color-blue;
+}
