@@ -19,6 +19,10 @@ export class FacilitiesService {
     return this.facilitiesArray.slice();
   }
 
+  retrieveSingleFacility(id: number) {
+    return this.facilitiesArray[id];
+  }
+
   constructor() {}
 }
 
