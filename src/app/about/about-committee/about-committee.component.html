@@ -8,61 +8,25 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
-        <div class="committee-info">
-          <i class="bi bi-people"></i>
-          <h3>The ARC sub-committee</h3>
-          <p>Aim to secure and develop a multi-purpose facility in The ARC.</p>
+      <div
+        class="col-md-4"
+        *ngFor="let committee of committeeList; let id = index"
+      >
+        <div class="committee-info" *ngIf="id % 2 === 0; else imageBlock">
+          <i class="bi {{ committee.icon }}"></i>
+          <h3>{{ committee.heading }}</h3>
+          <p>{{ committee.description }}</p>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="committee-image">
-          <img
-            src="../../../assets/images/interior.jpg"
-            alt="building interior"
-            class="img-fluid"
-          />
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="committee-info">
-          <i class="bi bi-people"></i>
-          <h3>Fair Green Subcommittee</h3>
-          <p>
-            Aim to enhance the Fair Green area for the benefit of residents and
-            visitors to SpringField in line with objectives set out at a public
-            meeting held on 13/09/16 and SpringField Village Design Plan 2012.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="committee-image">
-          <img
-            src="../../../assets/images/interior.jpg"
-            alt="building interior"
-            class="img-fluid"
-          />
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="committee-info">
-          <i class="bi bi-people"></i>
-          <h3>FRC Senior Subcommittee</h3>
-          <p>
-            Aim to enhance the Fair Green area for the benefit of residents and
-            visitors to SpringField in line with objectives set out at a public
-            meeting held on 13/09/16 and SpringField Village Design Plan 2012.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="committee-image">
-          <img
-            src="../../../assets/images/interior.jpg"
-            alt="building interior"
-            class="img-fluid"
-          />
-        </div>
+
+        <ng-template #imageBlock>
+          <div class="committee-image">
+            <img
+              src="../../../assets/images/{{ committee.image }}.jpg"
+              alt="{{ committee.imageDescription }}"
+              class="img-fluid"
+            />
+          </div>
+        </ng-template>
       </div>
     </div>
   </div>
