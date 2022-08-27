@@ -3,13 +3,19 @@
     <div
       class="col-md-6"
       *ngFor="let facility of facilitesAvailable; let id = index"
+      (mouseenter)="changeClass(id)"
     >
       <img
         src="../../../assets/images/{{ facility.image }}.jpg"
         alt="{{ facility.name }}"
         class="img-fluid"
       />
-      <h3 (click)="toFacilityPage(id, facility.name)">{{ facility.name }}</h3>
+      <h3
+        (click)="toFacilityPage(id, facility.name)"
+        [ngClass]="{ test: selectedFacility === id }"
+      >
+        {{ facility.name }}
+      </h3>
     </div>
   </div>
 </div>

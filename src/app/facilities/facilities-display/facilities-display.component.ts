@@ -11,11 +11,13 @@ import { FacilitiesService } from 'src/app/services/facilities.service';
 export class FacilitiesDisplayComponent implements OnInit {
   //.
 
+  selectedFacility: number;
+
   facilitesAvailable: FacilityModel[];
 
-  // changeClass() {
-  //   console.log('Change the class for an overlay');
-  // }
+  changeClass(id: number) {
+    this.selectedFacility = id;
+  }
 
   // changeClassBack() {
   //   console.log('change the class back');

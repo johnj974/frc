@@ -1,0 +1,25 @@
+@import "../../../styles/helpers/variables";
+
+.container-fluid {
+  height: 40vh;
+  background: linear-gradient($color-lightgreen, $color-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: $color-white;
+  font-size: 8rem;
+}
+
+img {
+  max-height: 400px;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
