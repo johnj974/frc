@@ -18,8 +18,16 @@ img {
   width: 100%;
 }
 
+h3 {
+  margin-top: 2rem;
+}
+
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 4rem;
+  }
+
+  h3 {
+    text-align: center;
   }
 }
