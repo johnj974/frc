@@ -7,9 +7,15 @@ h3 {
 
 h4 {
   font-size: 4rem;
+  margin: 2rem auto;
 }
 
 img {
-  //max-height: 400px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    text-align: center;
+  }
 }

@@ -12,3 +12,9 @@
 h4 {
   color: $color-blue;
 }
+
+@media screen and (max-width: 768px) {
+  h4 {
+    text-align: center;
+  }
+}

@@ -1,9 +1,3 @@
-<!-- public name: string,
-    public description: string,
-    public day: string,
-    public time: string,
-    public goal: string[] -->
-
 <div class="container" *ngFor="let class of availableClasses; let id = index">
   <div class="row" [class]="{ 'flex-row-reverse': id % 2 === 0 }">
     <div class="col-md-8">
