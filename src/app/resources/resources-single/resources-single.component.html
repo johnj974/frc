@@ -1,10 +1,58 @@
 <app-top-banner>
   <h1 class="top-banner-h1">{{ singleService.name }}</h1>
   <img
-    src="{{ singleService.image }}"
+    src="{{ singleService.offerOneImage }}"
     alt="{{ singleService.name }}"
     class="img-fluid top-banner-grey"
   />
   <!-- <p>{{ singleService.description }}</p> -->
 </app-top-banner>
 {{ singleService.name }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{ singleService.image }}" alt="" />
+    </div>
+    <div class="col-md-6">
+      <h2>{{ singleService.offerOneHead }}</h2>
+      <h3>{{ singleService.offerOneDescription }}</h3>
+      <p>{{ singleService.offerOneParagraph }}</p>
+      <ul>
+        <li class="li" *ngFor="let item of singleService.offerOneList">
+          {{ item.title }} - {{ item.price }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>{{ singleService.offerTwoHead }}</h2>
+      <h3>{{ singleService.offerTwoDescription }}</h3>
+      <p>{{ singleService.offerTwoParagraph }}</p>
+      <ul>
+        <li class="li" *ngFor="let item of singleService.offerTwoList">
+          {{ item.title }} - {{ item.price }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <img src="{{ singleService.offerTwoImage }}" alt="" />
+    </div>
+  </div>
+</div>
+
+<!-- public name: string,
+public description: string,
+public link: string,
+public image: string,
+public offerOneHead: string,
+public offerOneDescription: string,
+public offerOneParagraph: string,
+public offerOneList: {}[],
+public offerOneImage: string,
+public offerTwoHead: string,
+public offerTwoDescription: string,
+public offerTwoParagraph: string,
+public offerTwoList: {}[],
+public offerTwoImage: string -->
