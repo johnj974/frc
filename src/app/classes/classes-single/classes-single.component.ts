@@ -26,20 +26,20 @@ export class ClassesSingleComponent implements OnInit, OnDestroy {
     let newClass = this.classesService.retrieveSingleClass(nextClass);
     let className = newClass.name.replace(/ /g, '');
     this.router.navigate(['/classes', nextClass, className]);
-    if (nextClass >= this.classesArray.length - 1) {
-      this.disableNextButton = true;
-    }
+    // if (nextClass >= this.classesArray.length - 1) {
+    //   this.disableNextButton = true;
+    // }
   }
 
   toPreviousClass() {
-    console.log(this.classId--);
+    console.log(this.classId);
     let prevClass = this.classId--;
     let newClass = this.classesService.retrieveSingleClass(prevClass);
     let className = newClass.name.replace(/ /g, '');
     this.router.navigate(['/classes', prevClass, className]);
-    if (prevClass >= this.classesArray.length - 1) {
-      this.disablePrevButton = true;
-    }
+    // if (prevClass >= this.classesArray.length - 1) {
+    //   this.disablePrevButton = true;
+    // }
   }
 
   constructor(
