@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { OffersModel } from 'src/app/models/offers.model';
 import { OffersService } from 'src/app/services/offers.service';
@@ -17,12 +17,13 @@ export class ResourcesSingleComponent implements OnInit, OnDestroy {
   serviceSubscription: Subscription;
 
   toContact() {
-    console.log('working');
+    this.router.navigate(['contact']);
   }
 
   constructor(
     private offersService: OffersService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {

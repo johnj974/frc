@@ -27,7 +27,11 @@ h3 {
   .col {
     text-align: center;
     margin: 6rem;
-    // border: 1px solid red;
+
+    h3 {
+      color: $color-white;
+      font-size: 4rem;
+    }
 
     p {
       width: 50%;
@@ -38,7 +42,7 @@ h3 {
 
 @media screen and (max-width: 661px) {
   .col {
-    margin: 0;
+    margin: 1rem;
   }
 
   p {

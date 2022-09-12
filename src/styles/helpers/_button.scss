@@ -13,6 +13,21 @@
   }
 }
 
+.btn-custom-secondary {
+  background-color: $color-lightgreen;
+  border: none;
+  font-size: 1.8rem;
+  color: $color-white;
+  padding: 1rem 3rem;
+  border-radius: 23px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .button-container {
     text-align: center;
