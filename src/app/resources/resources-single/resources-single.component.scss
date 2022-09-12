@@ -1,4 +1,5 @@
 @import "../../../styles/helpers/variables";
+@import "../../../styles/helpers/button";
 
 img {
   width: 100%;
@@ -17,6 +18,33 @@ h2 {
 
 h3 {
   color: $color-grey;
+}
+
+.diy-message {
+  background-color: $color-blue;
+  color: $color-white;
+
+  .col {
+    text-align: center;
+    margin: 6rem;
+    // border: 1px solid red;
+
+    p {
+      width: 50%;
+      margin: 2rem auto;
+    }
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .col {
+    margin: 0;
+  }
+
+  p {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 // ul {

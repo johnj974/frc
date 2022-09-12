@@ -16,6 +16,10 @@ export class ResourcesSingleComponent implements OnInit, OnDestroy {
   serviceId: number;
   serviceSubscription: Subscription;
 
+  toContact() {
+    console.log('working');
+  }
+
   constructor(
     private offersService: OffersService,
     private route: ActivatedRoute
