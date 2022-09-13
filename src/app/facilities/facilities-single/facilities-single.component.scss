@@ -19,7 +19,17 @@ img {
 }
 
 h3 {
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+span {
+  color: $color-blue;
+}
+
+.details > p {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {
@@ -27,6 +37,7 @@ h3 {
     font-size: 4rem;
   }
 
+  .details > p,
   h3,
   h4 {
     text-align: center;
